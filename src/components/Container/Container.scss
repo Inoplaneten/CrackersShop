@@ -1,0 +1,16 @@
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+
+	@include tablet-xl {
+		max-width: 720px;
+	}
+
+	@include tablet-lg {
+		max-width: 540px;
+	}
+
+	@include mobile-xl {
+		max-width: 90%;
+	}
+}

@@ -1,0 +1,39 @@
+.formAddOrder {
+    margin-top: 60px;
+
+    @include tablet-xl {
+        margin-top: 40px;
+    }
+
+    .selectBox {
+        background: url('../../../img/icons/icon-package.svg') no-repeat top 15px left;
+        padding-left: 160px;
+    
+        @include tablet-xl {
+            flex-direction: column;
+            padding-left: 105px;
+        }
+    
+        @include mobile-lg {
+            padding: 75px 0 0 0;
+            background-position: top center;
+        }
+    }
+    
+    .btnSubmitOrder {
+        align-self: flex-end;
+        margin-top: 85px;
+
+        @include tablet-xl {
+            margin-top: 25px;
+        }
+    }
+}
+
+.errorForm {
+    display: block;
+    margin-top: 20px;
+    color: $color-red;
+    text-align: center;
+    font-size: 20px;
+}

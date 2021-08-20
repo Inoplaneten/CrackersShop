@@ -1,0 +1,30 @@
+.btnClose {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28px;
+    right: 27px;
+    will-change: transform;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+
+    @include before {
+        right: 2.5px;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    @include after {
+        left: 2.5px;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before, &::after {
+        width: 20px;
+        height: 4px;
+        background-color: $color-light-black;
+        position: absolute;
+        top: 50%;
+    }
+}

@@ -1,0 +1,34 @@
+@import "./styles/variables";
+@import "./styles/colors";
+@import "./styles/mixins";
+@import "./styles/fonts";
+@import "./styles/normalize";
+@import "./styles/common";
+// Style Components
+@import './components/Container/Container';
+@import './components/Header/Header';
+@import './components/ButtonDelete/ButtonDelete';
+@import './components/ButtonClose/ButtonClose';
+@import './components/Body/InputRange/InputRange';
+@import './components/Body/Form/Form';
+@import './components/Body/CustomSelect/CustomSelect';
+@import './components/Footer/Footer';
+// Section order
+.sectionOrder {
+    background: url("./img/section-main-bg.jpg") no-repeat top center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 86px 0;
+
+    @include before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, .75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+  

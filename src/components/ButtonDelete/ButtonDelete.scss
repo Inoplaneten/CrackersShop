@@ -1,0 +1,33 @@
+.btnDelete {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid $color-light-black;
+    position: relative;
+
+    &:hover {
+        background-color: $color-light-black;
+        
+        &::before, &::after {
+            background-color: $color-white;
+        }
+    }
+
+    @include before {
+        right: 8px;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    @include after {
+        left: 8px;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::before, &::after {
+        width: 12px;
+        height: 2px;
+        background-color: $color-light-black;
+        position: absolute;
+        top: 50%;
+    }
+}

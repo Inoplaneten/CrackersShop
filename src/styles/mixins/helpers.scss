@@ -1,0 +1,59 @@
+@mixin hover {
+	.has-hover &:hover {
+		@content;
+	}
+}
+
+@mixin active-hover {
+	.has-hover &.is-active:hover {
+		@content;
+	}
+}
+
+@mixin active {
+	&.is-active {
+		@content;
+	}
+}
+
+@mixin disabled {
+	&.is-disabled,
+	&:disabled {
+		@content;
+	}
+}
+
+@mixin font-face($url, $font-family, $font-weight, $font-style) {
+	@font-face {
+		src:
+			url($url + ".woff2") format("woff2"),
+			url($url + ".woff") format("woff");
+		font-family: $font-family;
+		font-weight: $font-weight;
+		font-style: $font-style;
+		font-display: swap;
+	}
+}
+
+@mixin retina {
+	// stylelint-disable-next-line media-feature-name-no-vendor-prefix
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin after {
+	&::after {
+		content: "";
+		display: inline-block;
+		@content;
+	}
+}
+
+@mixin before {
+	&::before {
+		content: "";
+		display: inline-block;
+		@content;
+	}
+}

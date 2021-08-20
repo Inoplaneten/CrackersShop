@@ -1,0 +1,289 @@
+.inputRangeBox {
+    padding: 24px 0 24px 160px;
+
+    @include tablet-xl {
+        padding-left: 140px;
+    }
+
+    @include tablet-lg {
+        padding-left: 110px;
+    }
+
+    @include mobile-xl {
+        padding-left: 80px;
+    }
+
+    @include mobile-lg {
+        padding: 75px 0 0 0;
+        margin-bottom: 15px;
+    }
+
+    &:first-child {
+        background: url('../../../img/icons/icon-soybean-color.svg') no-repeat center left;
+
+        @include mobile-lg {
+            background-position: top center;
+        }
+
+        .inputRangeBox__slider {
+            &::-webkit-slider-thumb {
+                background: $color-light-green;
+            }
+
+            &::-moz-range-thumb {
+                background: $color-light-green;
+            }
+
+            &::-ms-thumb {
+                background: $color-light-green;
+            }
+
+            &::-webkit-slider-runnable-track {
+                background: $color-light-green;
+            }
+    
+            &:focus::-webkit-slider-runnable-track {
+                background: $color-light-green;
+            }
+    
+            &::-moz-range-track {
+                background: $color-light-green;
+            }
+    
+            &::-ms-fill-lower {
+                background: $color-light-green;
+            }
+
+            &:focus::-ms-fill-lower {
+                background: $color-light-green;
+            }
+
+            &::-ms-fill-upper {
+                background: $color-light-green;
+            }
+
+            &:focus::-ms-fill-upper {
+                background: $color-light-green;
+            }
+        }
+    }
+
+    &:nth-child(2) {
+        background: url('../../../img/icons/icon-sesame-color.svg') no-repeat center left;
+
+        @include mobile-lg {
+            background-position: top center;
+        }
+
+        .inputRangeBox__slider {
+            &::-webkit-slider-thumb {
+                background: $color-dark-green;
+            }
+
+            &::-moz-range-thumb {
+                background: $color-dark-green;
+            }
+
+            &::-ms-thumb {
+                background: $color-dark-green;
+            }
+
+            &::-webkit-slider-runnable-track {
+                background: $color-dark-green;
+            }
+    
+            &:focus::-webkit-slider-runnable-track {
+                background: $color-dark-green;
+            }
+    
+            &::-moz-range-track {
+                background: $color-dark-green;
+            }
+    
+            &::-ms-fill-lower {
+                background: $color-dark-green;
+            }
+            
+            &:focus::-ms-fill-lower {
+                background: $color-dark-green;
+            }
+
+            &::-ms-fill-upper {
+                background: $color-dark-green;
+            }
+
+            &:focus::-ms-fill-upper {
+                background: $color-dark-green;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        background: url('../../../img/icons/icon-wheat-color.svg') no-repeat center left;
+
+        @include mobile-lg {
+            background-position: top center;
+        }
+
+        .inputRangeBox__slider {
+            &::-webkit-slider-thumb {
+                background: $color-dark-yellow;
+            }
+
+            &::-moz-range-thumb {
+                background: $color-dark-yellow;
+            }
+
+            &::-ms-thumb {
+                background: $color-dark-yellow;
+            }
+
+            &::-webkit-slider-runnable-track {
+                background: $color-dark-yellow;
+            }
+    
+            &:focus::-webkit-slider-runnable-track {
+                background: $color-dark-yellow;
+            }
+    
+            &::-moz-range-track {
+                background: $color-dark-yellow;
+            }
+    
+            &::-ms-fill-lower {
+                background: $color-dark-yellow;
+            }
+            
+            &:focus::-ms-fill-lower {
+                background: $color-dark-yellow;
+            }
+
+            &::-ms-fill-upper {
+                background: $color-dark-yellow;
+            }
+
+            &:focus::-ms-fill-upper {
+                background: $color-dark-yellow;
+            }
+        }
+    }
+
+    &:nth-child(4) {
+        background: url('../../../img/icons/icon-corn-color.svg') no-repeat center left;
+
+        @include mobile-lg {
+            background-position: top center;
+        }
+    }
+
+    &__slider {
+        max-width: 620px;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $color-light-gray-opacity;
+            cursor: pointer;
+            margin-top: -20px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        }
+
+        /* All the same stuff for Firefox */
+        &::-moz-range-thumb {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $color-light-gray-opacity;
+            cursor: pointer;
+        }
+
+        /* All the same stuff for IE */
+        &::-ms-thumb {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $color-light-gray-opacity;
+            cursor: pointer;
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: $color-light-gray-opacity;
+            border-radius: 50px;
+
+            @include tablet-xl {
+                width: 75%;
+            }
+
+            @include mobile-xl {
+                width: 85%;
+            }
+        }
+
+        &:focus::-webkit-slider-runnable-track {
+            background: $color-light-gray-opacity;
+        }
+
+        &::-moz-range-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: $color-light-gray-opacity;
+            border-radius: 50px;
+
+            @include tablet-xl {
+                width: 75%;
+            }
+
+            @include mobile-xl {
+                width: 85%;
+            }
+        }
+
+        &::-ms-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+
+            @include tablet-xl {
+                width: 75%;
+            }
+
+            @include mobile-xl {
+                width: 85%;
+            }
+        }
+
+        &::-ms-fill-lower {
+            background: $color-light-gray-opacity;
+            border-radius: 50px;
+        }
+
+        &:focus::-ms-fill-lower {
+            background: $color-light-gray-opacity;
+        }
+
+        &::-ms-fill-upper {
+            background: $color-light-gray-opacity;
+            border-radius: 50px;
+        }
+
+        &:focus::-ms-fill-upper {
+            background: $color-light-gray-opacity;
+        }
+    }
+
+    &__result {
+        font-size: 30px;
+
+        @include mobile-xl {
+            font-size: 25px;
+        }
+    }
+}
