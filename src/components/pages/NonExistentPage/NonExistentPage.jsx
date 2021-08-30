@@ -7,9 +7,9 @@ const NonExistentPage = () => {
     return (
         <Section>
             <Container>
-                <h2>
+                <h1 className='sectionTitle'>
                     Not found page
-                </h2>
+                </h1>
             </Container>
         </Section>
     )

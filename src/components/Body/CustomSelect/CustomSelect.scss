@@ -2,21 +2,6 @@
     color: inherit !important;
 }
 
-.input-select__value {
+.inputSelect__value {
     font-size: 14px;
-}
-
-.css-f86j3z-control {
-    @include mobile-lg {
-        padding: 12px;
-    }
-}
-
-.css-f86j3z-control,
-.css-gdheco-control,
-.css-1mq3ptm-placeholder,
-.css-1ndpss-ValueContainer {
-    @include mobile-lg {
-        font-size: 19px !important;
-    }
 }

@@ -4,7 +4,7 @@
     color: $color-white;
 }
 
-.footer-contacts {
+.footerContacts {
     @include tablet-lg {
         flex-direction: column;
         justify-content: normal;
@@ -15,7 +15,7 @@
         padding-left: 48px;
         position: relative;
 
-        &-icon {
+        &Icon {
             position: absolute;
             top: -5px;
             left: 0;
@@ -34,8 +34,9 @@
     }
 
     &__title {
-        font-size: 16px;
         margin-bottom: 34px;
+        text-transform: uppercase;
+        font: 400 16px 'Fredoka One', sans-serif;
 
         @include tablet-lg {
             display: flex;
@@ -44,7 +45,7 @@
         }
     }
 
-    &__phone-link {
+    &__phoneLink {
         display: inline-block;
         letter-spacing: 0.05em;
     }
@@ -59,39 +60,42 @@
         }
     }
 
-    &__social-list {
-        margin: -5px -14px -14px 0;
-    }
-
-    &__social-item {
-        margin: 0 14px 14px 0;
-    }
-
-    &__social-link {
-        display: block;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 1px solid $color-white;
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.6);
+    &__social {
+        &List {
+            margin: -5px -14px -14px 0;
         }
 
-        &_pint {
-            background: url('../../img/icons/icon-pinterest.svg') no-repeat center center;
+        &Item {
+            margin: 0 14px 14px 0;
         }
 
-        &_fb {
-            background: url('../../img/icons/icon-facebook.svg') no-repeat center center;
+        &Link {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid $color-white;
+    
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+    
+            &_pint {
+                background: url('../../img/icons/icon-pinterest.svg') no-repeat center center;
+            }
+    
+            &_fb {
+                background: url('../../img/icons/icon-facebook.svg') no-repeat center center;
+            }
+    
+            &_gPlus {
+                background: url('../../img/icons/icon-google-plus.svg') no-repeat center center;
+            }
+            
+            span {
+                display: none;
+            }
         }
 
-        &_gplus {
-            background: url('../../img/icons/icon-google-plus.svg') no-repeat center center;
-        }
-        
-        span {
-            display: none;
-        }
     }
 }

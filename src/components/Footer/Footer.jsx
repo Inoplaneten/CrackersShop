@@ -15,7 +15,7 @@ const Footer = () => {
             href: 'https://www.facebook.com'
         },
         {
-            name: 'gplus',
+            name: 'gPlus',
             href: 'https://plus.google.com'
         }
     ];
@@ -23,39 +23,39 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <Container>
-                <div className='footer-contacts d-flex j-content-between'>
-                    <div className='footer-contacts__item footer-contacts__item_phone'>
-                        <h3 className='footer-contacts__title'>
-                            <img src={iconPhone} alt='Phone' className='footer-contacts__item-icon'/>
+                <div className='footerContacts dFlex jContentBetween'>
+                    <div className='footerContacts__item footerContacts__item_phone'>
+                        <p className='footerContacts__title'>
+                            <img src={iconPhone} alt='Phone' className='footerContacts__itemIcon'/>
                             <span>Phone</span>
-                        </h3>
-                        <a href='tel:+439873456782' className='footer-contacts__phone-link'>
+                        </p>
+                        <a href='tel:+439873456782' className='footerContacts__phoneLink'>
                             +43 (987) 345-6782
                         </a>
                     </div>
-                    <div className='footer-contacts__item footer-contacts__item_address'>
-                        <h3 className='footer-contacts__title'>
-                            <img src={iconMap} alt='Address' className='footer-contacts__item-icon'/>
+                    <div className='footerContacts__item footerContacts__item_address'>
+                        <p className='footerContacts__title'>
+                            <img src={iconMap} alt='Address' className='footerContacts__itemIcon'/>
                             <span>Address</span>
-                        </h3>
-                        <address className='footer-contacts__address'>
+                        </p>
+                        <address className='footerContacts__address'>
                             Cracker Inc.<br/> 
                             10 Cloverfield Lane
                             Berlin, IL 10928
                             Germany
                         </address>
                     </div>
-                    <div className='footer-contacts__item footer-contacts__item_social'>
-                        <h3 className='footer-contacts__title'>
-                            <img src={iconSocial} alt='Share us' className='footer-contacts__item-icon'/>
+                    <div className='footerContacts__item footerContacts__item_social'>
+                        <p className='footerContacts__title'>
+                            <img src={iconSocial} alt='Share us' className='footerContacts__itemIcon'/>
                             <span>Share us</span>
-                        </h3>
-                        <ul className='footer-contacts__social-list d-flex f-wrap'>
+                        </p>
+                        <ul className='footerContacts__socialList dFlex fWrap'>
                             {socialNetworks.map(({name, href}, index) => (
-                                <li className='footer-contacts__social-item' key={index}>
+                                <li className='footerContacts__socialItem' key={index}>
                                     <a 
                                         href={href}
-                                        className={`footer-contacts__social-link footer-contacts__social-link_${name}`}
+                                        className={`footerContacts__socialLink footerContacts__socialLink_${name}`}
                                         target='_blank'
                                         rel='nofollow noopener noreferrer'
                                     >

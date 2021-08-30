@@ -3,12 +3,12 @@
     text-transform: uppercase;
 }
 
-.top-header {
+.topHeader {
     padding: 16px 0;
     background-color: $color-light-black;
 }
 
-.navigation-top {
+.navigationTop {
     position: relative;
 }
 
@@ -188,7 +188,7 @@
     }
 }
 
-.bottom-header {
+.bottomHeader {
     background-color: $color-light-black-opacity;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.12),0px 4px 4px 0px rgba(0, 0, 0, 0.24);
     position: relative;

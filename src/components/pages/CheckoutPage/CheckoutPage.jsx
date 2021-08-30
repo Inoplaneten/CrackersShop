@@ -7,7 +7,9 @@ const CheckoutPage = () => {
     return (
         <Section>
             <Container>
-                
+                <h1 className='sectionTitle'>
+                    Checkout
+                </h1>
             </Container>
         </Section>
     )

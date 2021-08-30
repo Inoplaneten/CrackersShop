@@ -35,9 +35,9 @@ const Header = ({ orders, totalOrders, totalWeightOrders, getTheRemovalOfOrder }
 
     return (
         <header className='header'>
-            <div className="top-header">
+            <div className="topHeader">
                 <Container>
-                    <div className='navigation-top d-flex align-items-center j-content-between'>
+                    <div className='navigationTop dFlex alignItemsCenter jContentBetween'>
                         <NavLink
                             to='/'
                             exact
@@ -45,7 +45,7 @@ const Header = ({ orders, totalOrders, totalWeightOrders, getTheRemovalOfOrder }
                         >
                             Cracker
                         </NavLink>
-                        <div className='orderDetails d-flex j-content-end'>
+                        <div className='orderDetails dFlex jContentEnd'>
                             <NavLink
                                     to='/checkout'
                                     exact
@@ -129,14 +129,14 @@ const Header = ({ orders, totalOrders, totalWeightOrders, getTheRemovalOfOrder }
                                             })}
                                         </tbody>
                                     </table>
-                                    <div className="cartMiniResult d-flex j-content-end align-items-center">
+                                    <div className="cartMiniResult dFlex jContentEnd align-items-center">
                                         <div className="cartMiniResult__total">
-                                            Total: <span className="cartMiniResult__total-number">{totalWeightOrders} kg</span>
+                                            Total: <span className="cartMiniResult__totalNumber">{totalWeightOrders} kg</span>
                                         </div>
                                         <NavLink
                                             to='/checkout'
                                             exact
-                                            className='cartMiniResult__btn btn btn-small'
+                                            className='cartMiniResult__btn btn btnSmall'
                                         >
                                             Checkout
                                         </NavLink>
@@ -147,11 +147,11 @@ const Header = ({ orders, totalOrders, totalWeightOrders, getTheRemovalOfOrder }
                     </div>
                 </Container>
             </div>
-            <div className="bottom-header">
+            <div className="bottomHeader">
                 <Container>
-                    <div className='navigation-bottom d-flex j-content-end align-items-center'>
+                    <div className='navigationBottom dFlex jContentEnd alignItemsCenter'>
                         <nav className={`menu ${isActiveMenu ? 'isActive' : ''}`}>
-                            <ul className='menu__list d-flex'>
+                            <ul className='menu__list dFlex'>
                                 {
                                     menu.map(({text, href}, index) => {
                                         return (

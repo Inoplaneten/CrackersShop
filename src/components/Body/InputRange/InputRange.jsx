@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const InputRange = props => {
     return (
-        <div className='inputRangeBox d-flex j-content-between'>
+        <div className='inputRangeBox dFlex jContentBetween'>
             <input 
                 type='range' 
                 name={props.name} 

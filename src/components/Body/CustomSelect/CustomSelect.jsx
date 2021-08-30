@@ -6,7 +6,7 @@ const { Option } = components;
 const CustomSelectOption = props => (
     <Option {...props}>
         {props.data.label}
-        <span className="input-select__value">({props.data.value}kg)</span>
+        <span className="inputSelect__value">({props.data.value}kg)</span>
     </Option>
 );
 
@@ -27,7 +27,7 @@ const customStyles = {
         cursor: 'pointer'
     }),
 
-    container: (provided, state) => ({
+    container: (provided) => ({
         ...provided,
         marginTop: 10,
         maxWidth: 400,
@@ -35,7 +35,7 @@ const customStyles = {
         flexShrink: 0,
     }),
 
-    placeholder: (provided, state) => ({
+    placeholder: (provided) => ({
         ...provided,
         fontFamily: 'Fredoka One, sans-serif',
         fontWeight: 400,
@@ -47,7 +47,7 @@ const customStyles = {
     indicatorSeparator: () => ({
     }),
 
-    menu: (provided, state) => ({
+    menu: (provided) => ({
         ...provided,
         marginTop: 11,
         backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -55,7 +55,7 @@ const customStyles = {
         borderRadius: 30
     }),
 
-    menuList: (provided, state) => ({
+    menuList: (provided) => ({
         ...provided,
         borderRadius: 30,
         fontFamily: 'Avenir, sans-serif',
@@ -74,7 +74,7 @@ const customStyles = {
           borderBottom: '2px solid #f99a78',
     }),
 
-    singleValue: (provided, state) => ({
+    singleValue: (provided) => ({
         ...provided,
         fontFamily: 'Fredoka One, sans-serif',
         fontSize: 24,
@@ -83,12 +83,13 @@ const customStyles = {
         color: '#ff4200'
     }),
     
-    valueContainer: (provided, state) => ({
+    valueContainer: (provided) => ({
         ...provided,
+        overflow: 'visible',
+        justifyContent: 'center',
         fontFamily: 'Fredoka One, sans-serif',
         fontWeight: 400,
-        fontSize: 24,
-        justifyContent: 'center'
+        fontSize: 24
     }),
 };
 

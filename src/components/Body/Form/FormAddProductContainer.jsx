@@ -47,14 +47,14 @@ const FormAddProductContainer = ({ formAddProduct, setFieldRangeUpdateForOrderAd
                     )
                 })
             }
-            <div className='selectBox d-flex j-content-between align-items-start'>
+            <div className='selectBox dFlex jContentBetween alignItemsStart'>
                 <CustomSelect
                     options={formAddProduct.select.options}
                     placeholder='Choose your pack'
                     value={formAddProduct.select.selectedOptions}
                     onChange={setSelectedOptionsUpdateForOrderAddForm}
                 />
-                <button className='btnSubmitOrder btn btn-large'>
+                <button className='btnSubmitOrder btn btnLarge'>
                     Add to Cart
                 </button>
             </div>

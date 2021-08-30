@@ -7,7 +7,9 @@ const ContactsPage = () => {
     return (
         <Section>
             <Container>
-                
+                <h1 className='sectionTitle'>
+                    Contacts
+                </h1>
             </Container>
         </Section>
     )

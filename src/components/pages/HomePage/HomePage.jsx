@@ -8,9 +8,9 @@ const HomePage = () => {
     return (
         <Section className='sectionOrder'>
             <Container>
-                <h2 className="section-title">
+                <h1 className="sectionTitle">
                     Cracker constructor
-                </h2>
+                </h1>
                 <FormAddProductContainer/>
             </Container>
         </Section>
